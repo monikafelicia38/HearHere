@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A6335342A1C7687003C5B7D /* MicrophoneMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6335332A1C7687003C5B7D /* MicrophoneMonitor.swift */; };
+		3A9307DA2A1A234C00E7C444 /* DetectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9307D92A1A234C00E7C444 /* DetectView.swift */; };
+		3AB61C0F2A163C9300480B03 /* HearHere Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3AB61C0E2A163C9300480B03 /* HearHere Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3AB61C142A163C9300480B03 /* HearHereApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB61C132A163C9300480B03 /* HearHereApp.swift */; };
+		3AB61C162A163C9300480B03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB61C152A163C9300480B03 /* ContentView.swift */; };
+		3AB61C182A163C9500480B03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AB61C172A163C9500480B03 /* Assets.xcassets */; };
+		3AB61C1B2A163C9500480B03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AB61C1A2A163C9500480B03 /* Preview Assets.xcassets */; };
+		3AF450AE2A1B123600617A8F /* LandingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF450AD2A1B123600617A8F /* LandingPageView.swift */; };
+		3AF450B32A1B191800617A8F /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF450B22A1B191800617A8F /* SwiftUIView.swift */; };
+		3AF450B52A1B229900617A8F /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF450B42A1B229900617A8F /* ResultView.swift */; };
+		3AF450B72A1B30A700617A8F /* ResultTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF450B62A1B30A700617A8F /* ResultTypeView.swift */; };
+		3AF450B92A1B599400617A8F /* MatchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF450B82A1B599400617A8F /* MatchType.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3AB61C102A163C9300480B03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AB61C022A163C9300480B03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AB61C0D2A163C9300480B03;
+			remoteInfo = "HearHere Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3AB61C212A163C9500480B03 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3AB61C0F2A163C9300480B03 /* HearHere Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3A6335332A1C7687003C5B7D /* MicrophoneMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneMonitor.swift; sourceTree = "<group>"; };
+		3A9307D92A1A234C00E7C444 /* DetectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectView.swift; sourceTree = "<group>"; };
+		3AB61C082A163C9300480B03 /* HearHere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HearHere.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AB61C0E2A163C9300480B03 /* HearHere Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HearHere Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AB61C132A163C9300480B03 /* HearHereApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearHereApp.swift; sourceTree = "<group>"; };
+		3AB61C152A163C9300480B03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3AB61C172A163C9500480B03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3AB61C1A2A163C9500480B03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3AF450AD2A1B123600617A8F /* LandingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageView.swift; sourceTree = "<group>"; };
+		3AF450B22A1B191800617A8F /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		3AF450B42A1B229900617A8F /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		3AF450B62A1B30A700617A8F /* ResultTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTypeView.swift; sourceTree = "<group>"; };
+		3AF450B82A1B599400617A8F /* MatchType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchType.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AB61C0B2A163C9300480B03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AB61C012A163C9300480B03 = {
+			isa = PBXGroup;
+			children = (
+				3AB61C122A163C9300480B03 /* HearHere Watch App */,
+				3AB61C092A163C9300480B03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3AB61C092A163C9300480B03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AB61C082A163C9300480B03 /* HearHere.app */,
+				3AB61C0E2A163C9300480B03 /* HearHere Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AB61C122A163C9300480B03 /* HearHere Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				3AF450AC2A1B121700617A8F /* View */,
+				3AF450AF2A1B127D00617A8F /* View Model */,
+				3AB61C132A163C9300480B03 /* HearHereApp.swift */,
+				3AB61C152A163C9300480B03 /* ContentView.swift */,
+				3AB61C172A163C9500480B03 /* Assets.xcassets */,
+				3AB61C192A163C9500480B03 /* Preview Content */,
+				3AF450B22A1B191800617A8F /* SwiftUIView.swift */,
+			);
+			path = "HearHere Watch App";
+			sourceTree = "<group>";
+		};
+		3AB61C192A163C9500480B03 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3AB61C1A2A163C9500480B03 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3AF450AC2A1B121700617A8F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3AF450AD2A1B123600617A8F /* LandingPageView.swift */,
+				3A9307D92A1A234C00E7C444 /* DetectView.swift */,
+				3AF450B42A1B229900617A8F /* ResultView.swift */,
+				3AF450B62A1B30A700617A8F /* ResultTypeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3AF450AF2A1B127D00617A8F /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				3AF450B82A1B599400617A8F /* MatchType.swift */,
+				3A6335332A1C7687003C5B7D /* MicrophoneMonitor.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AB61C072A163C9300480B03 /* HearHere */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AB61C222A163C9500480B03 /* Build configuration list for PBXNativeTarget "HearHere" */;
+			buildPhases = (
+				3AB61C062A163C9300480B03 /* Resources */,
+				3AB61C212A163C9500480B03 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AB61C112A163C9300480B03 /* PBXTargetDependency */,
+			);
+			name = HearHere;
+			productName = HearHere;
+			productReference = 3AB61C082A163C9300480B03 /* HearHere.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		3AB61C0D2A163C9300480B03 /* HearHere Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AB61C1E2A163C9500480B03 /* Build configuration list for PBXNativeTarget "HearHere Watch App" */;
+			buildPhases = (
+				3AB61C0A2A163C9300480B03 /* Sources */,
+				3AB61C0B2A163C9300480B03 /* Frameworks */,
+				3AB61C0C2A163C9300480B03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HearHere Watch App";
+			productName = "HearHere Watch App";
+			productReference = 3AB61C0E2A163C9300480B03 /* HearHere Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AB61C022A163C9300480B03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					3AB61C072A163C9300480B03 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					3AB61C0D2A163C9300480B03 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 3AB61C052A163C9300480B03 /* Build configuration list for PBXProject "HearHere" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3AB61C012A163C9300480B03;
+			productRefGroup = 3AB61C092A163C9300480B03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AB61C072A163C9300480B03 /* HearHere */,
+				3AB61C0D2A163C9300480B03 /* HearHere Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AB61C062A163C9300480B03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AB61C0C2A163C9300480B03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AB61C1B2A163C9500480B03 /* Preview Assets.xcassets in Resources */,
+				3AB61C182A163C9500480B03 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AB61C0A2A163C9300480B03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AB61C162A163C9300480B03 /* ContentView.swift in Sources */,
+				3AF450B32A1B191800617A8F /* SwiftUIView.swift in Sources */,
+				3AB61C142A163C9300480B03 /* HearHereApp.swift in Sources */,
+				3AF450AE2A1B123600617A8F /* LandingPageView.swift in Sources */,
+				3AF450B92A1B599400617A8F /* MatchType.swift in Sources */,
+				3AF450B52A1B229900617A8F /* ResultView.swift in Sources */,
+				3AF450B72A1B30A700617A8F /* ResultTypeView.swift in Sources */,
+				3A6335342A1C7687003C5B7D /* MicrophoneMonitor.swift in Sources */,
+				3A9307DA2A1A234C00E7C444 /* DetectView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3AB61C112A163C9300480B03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AB61C0D2A163C9300480B03 /* HearHere Watch App */;
+			targetProxy = 3AB61C102A163C9300480B03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3AB61C1C2A163C9500480B03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3AB61C1D2A163C9500480B03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3AB61C1F2A163C9500480B03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HearHere Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 83UK992WNB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HearHere;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Getting sound desible";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Getting sound desible";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HearHere.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		3AB61C202A163C9500480B03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HearHere Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 83UK992WNB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HearHere;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Getting sound desible";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Getting sound desible";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HearHere.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		3AB61C232A163C9500480B03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83UK992WNB;
+				INFOPLIST_KEY_CFBundleDisplayName = HearHere;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HearHere;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3AB61C242A163C9500480B03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83UK992WNB;
+				INFOPLIST_KEY_CFBundleDisplayName = HearHere;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HearHere;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AB61C052A163C9300480B03 /* Build configuration list for PBXProject "HearHere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AB61C1C2A163C9500480B03 /* Debug */,
+				3AB61C1D2A163C9500480B03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AB61C1E2A163C9500480B03 /* Build configuration list for PBXNativeTarget "HearHere Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AB61C1F2A163C9500480B03 /* Debug */,
+				3AB61C202A163C9500480B03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AB61C222A163C9500480B03 /* Build configuration list for PBXNativeTarget "HearHere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AB61C232A163C9500480B03 /* Debug */,
+				3AB61C242A163C9500480B03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3AB61C022A163C9300480B03 /* Project object */;
+}
