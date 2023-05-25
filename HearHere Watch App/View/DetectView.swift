@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct DetectView: View {
+    
     @ObservedObject var mic = MicrophoneMonitor()
     @State var timeRemaining = 10
     @State var scaleUp = false
-    
-    @State var startAnimation: Bool = false
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -34,27 +33,12 @@ struct DetectView: View {
                             .frame(width: 100, height: 100)
                             .scaleEffect(scaleUp ? 1 : randomScale())
                             .animation(Animation.linear(duration: 1).repeatForever(autoreverses: true), value: scaleUp)
-//                            .onReceive (timer) { t in
-//                                if self.timeRemaining <= 10 {
-//                                    withAnimation(.easeIn(duration: 20)) {
-//                                        startAnimation.toggle()
-//                                    }
-//                                }
-//                            }
                         
                         Circle()
                             .fill(Color("Purple"))
                             .frame(width: 76, height: 76)
                             .scaleEffect(scaleUp ? 1 : randomScale())
                             .animation(Animation.linear(duration: 1).repeatForever(autoreverses: true), value: scaleUp)
-//                            .onReceive (timer) { t in
-//                                if self.timeRemaining <= 10 {
-//                                    withAnimation(.easeIn(duration: 20)) {
-//                                        startAnimation.toggle()
-//                                    }
-//                                }
-//                            }
-//                            .animation(.easeIn)
                         
                         Circle()
                             .fill(Color("Oval3"))
@@ -72,9 +56,6 @@ struct DetectView: View {
                             }
                         }
                         .foregroundColor(Color("Grey"))
-                    //                                            .padding(.top, 16.0)
-                    
-                    //                    Text("\(mic.soundLevel)")
                 }
             }
             .padding(.top, 20.0)
