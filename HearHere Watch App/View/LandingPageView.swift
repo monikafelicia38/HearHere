@@ -9,12 +9,15 @@ import SwiftUI
 
 struct LandingPageView: View {
     var body: some View {
+        
+        //MARK: Logo in Landing Page
         NavigationView{
             VStack (spacing: 12){
                 Image("Logo")
                     .resizable()
                     .frame(width: 90, height: 90)
                 
+                //MARK: Button
                 NavigationLink (destination: DetectView()) {
                     Text("Check")
                         .font(.body)
@@ -32,9 +35,9 @@ struct LandingPageView: View {
                 .frame(width: 174, height: 44)
             }
             
+            //MARK: App Name
             .padding(.top, 16.0)
             .navigationTitle("HearHere")
-            //            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

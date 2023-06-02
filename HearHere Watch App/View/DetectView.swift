@@ -17,6 +17,7 @@ struct DetectView: View {
     
     var body: some View {
         
+        //MARK: Link to the Next Page
         NavigationStack {
             ZStack {
                 NavigationLink(
@@ -26,6 +27,7 @@ struct DetectView: View {
                     }
                     .opacity(0)
                 
+                //MARK: Animation Circle
                 VStack {
                     ZStack {
                         Circle()
@@ -43,11 +45,13 @@ struct DetectView: View {
                         Circle()
                             .fill(Color("Oval3"))
                             .frame(width: 60, height: 60)
-                                
                             }
+                    
+                    //MARK: Prompt to Wait
                     Text("Wait for it...")
                         .padding(.top, 8.0)
                     
+                    //MARK: Countdown Timer
                     Text("\(timeRemaining) seconds")
                         .onReceive(timer) { _ in
                             if timeRemaining > 0 {
@@ -56,18 +60,25 @@ struct DetectView: View {
                             }
                         }
                         .foregroundColor(Color("Grey"))
+                    
+                    //MARK: Check the soundLevel in dBFS (Decibel Full Scale)
+                    //Text("\(mic.soundLevel)")
                 }
             }
             .padding(.top, 20.0)
             
         }
+        //MARK: Start Monitor the Microphone
         .onAppear() {
             self.mic.startMonitoring()
         }
+        
+        //MARK: App Name inline
         .navigationTitle("HearHere")
         .navigationBarTitleDisplayMode(.inline)
     }
     
+    //MARK: Randoming the Decibel based on the observasion
     func randomScale() -> Double {
         return [1.05, 1.1, 1.2].randomElement()!
     }

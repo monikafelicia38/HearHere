@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//MARK: Title for the Result
 enum MatchType: String {
     case match = "Perfect!"
     case mismatched = "Mismatched!"
@@ -15,6 +16,7 @@ enum MatchType: String {
         return self.rawValue
     }
     
+    //MARK: Description for the Result
     var description: String {
         switch self {
         case .match:
@@ -24,6 +26,7 @@ enum MatchType: String {
         }
     }
     
+    //MARK: Symbol for the Result
     var symbol: String {
         switch self {
         case .match:
@@ -34,6 +37,7 @@ enum MatchType: String {
     }
 }
 
+//MARK: Color for the Result
 func getMatchColor(Match: MatchType) -> Color {
     switch Match {
     case .match:
@@ -43,6 +47,7 @@ func getMatchColor(Match: MatchType) -> Color {
     }
 }
 
+//MARK: Sound Level Condition
 func getMatchType(soundLevel: Int) -> MatchType {
     if (soundLevel <= -22 ) {
         return .match

@@ -11,6 +11,8 @@ struct ResultTypeView: View {
     var matchType: MatchType
     
     var body: some View {
+        
+        //MARK: Result Symbol & Title
         ScrollView {
             VStack (spacing: 8){
                 VStack(alignment: .leading, spacing: 1.5) {
@@ -24,11 +26,13 @@ struct ResultTypeView: View {
                             .foregroundColor(Color.black)
                     }
                     
+                    //MARK: Result Description
                     Text(matchType.description)
                         .fontWeight(.medium)
                         .font(.system(size: 14))
                         .foregroundColor(Color.black)
                 }
+                //MARK: Result Background Color
                 .padding(.horizontal, 8.0)
                 .padding(.vertical, 12.0)
                 .frame(width: 168)

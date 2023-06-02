@@ -13,11 +13,13 @@ struct ResultView: View {
     var body: some View {
         let matchType = getMatchType(soundLevel: Int(mic.soundLevel))
         
+        //MARK: Result Information
         NavigationView{
             ScrollView {
                 VStack (spacing: 8){
                     HStack {
                         
+                        //MARK: Decibel Label based on the Condition of dBFS
                         if (Int(mic.soundLevel) <= -22) {
                             Text("\(Int.random(in: 35...45))")
                                 .font(.largeTitle)
@@ -26,7 +28,7 @@ struct ResultView: View {
                                 .font(.largeTitle)
                         }
                         
-                        
+                        //MARK: dB Label
                         VStack {
                             Spacer()
                             Text("dB")
@@ -35,15 +37,19 @@ struct ResultView: View {
                     }
                     .frame(height: 41)
                     
+                    //MARK: Information based on Result
                     ResultTypeView(matchType: matchType)
                 }
                 .padding(.top, 8.0)
             }
         }
+        
+        //MARK: Stop Monitor the Microphone
         .onAppear() {
             mic.stopMonitoring()
         }
         
+        //MARK: App Name inline
         .navigationTitle("HearHere")
         .navigationBarTitleDisplayMode(.inline)
     }
